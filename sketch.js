@@ -42,6 +42,10 @@ function draw() {
   }
 
 
+  if (value == "" || value == 0 || value < 4){
+
+    value = 30;
+  }
   if (int(value) != rows && value != "" && value != 0){
     rows = int(value);
     cols = int(value);
