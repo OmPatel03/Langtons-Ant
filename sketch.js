@@ -35,14 +35,14 @@ function draw() {
   drawGrid(grid, rows, cols);
   drawCells(grid);
   ant.move();
-  console.log(value);
+  console.log(typeof value);
   
   if (ant.checkEdges() == true){
     reset();
   }
 
 
-  if (value == "" || value == 0 || value < 4){
+  if (isNaN(value) || value == 0 || value < 4){
 
     value = 30;
   }
