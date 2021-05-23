@@ -15,6 +15,7 @@ ___The [wikipedia](https://en.wikipedia.org/wiki/Langton%27s_ant) contains furth
 
 * The slider controls the speed at which the simulation runs.
 * The reset button resets the simulation by placing the ant in the middle of the grid and turning all the squares white.
+* The text box configures the dimensions of the grid (eg. 10 x 10, 20 x 20, 15 x 15).
 
 
 
