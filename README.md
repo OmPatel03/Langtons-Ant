@@ -1,11 +1,11 @@
-# Langtons-Ant
+# Langton's-Ant
 A simulation of the cellular automata known as "Langton's Ant".
 
 ### Rules
 
 * At a white square, turn 90° clockwise, flip the color of the square, move forward one unit.
 
-* At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
+* At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit.
 
 ___The [wikipedia](https://en.wikipedia.org/wiki/Langton%27s_ant) contains further information on this simulation.___
 
@@ -13,8 +13,8 @@ ___The [wikipedia](https://en.wikipedia.org/wiki/Langton%27s_ant) contains furth
 
 ### Features
 
-* The slider controls the speed at which the simulation runs
-* The reset button resets the simulation by placing the ant in the middle of the grid and turning all the squares white
+* The slider controls the speed at which the simulation runs.
+* The reset button resets the simulation by placing the ant in the middle of the grid and turning all the squares white.
 
 
 
