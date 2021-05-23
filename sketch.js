@@ -1,11 +1,13 @@
 let dims = 30;
 let rows = dims;
 let cols = dims;
-let grid = new Array(rows);
+let grid = new Array();
 let ant;
 let frames = 15;
 let slider;
 let button;
+let input;
+let value;
 
 function setup() {
   createCanvas(600, 600);
@@ -22,19 +24,30 @@ function setup() {
   slider = createSlider(1, 50, 10);
   button = createButton("Reset Ant");
   button.mousePressed(reset);
+  input = createInput("30");
 }
 
 function draw() {
   background(225);
+  value = input.value();
   frameRate(slider.value());
   
   drawGrid(grid, rows, cols);
   drawCells(grid);
   ant.move();
+  console.log(value);
   
   if (ant.checkEdges() == true){
     reset();
   }
+
+
+  if (int(value) != rows && value != "" && value != 0){
+    rows = int(value);
+    cols = int(value);
+    reset();
+  }
+
   ant.show();
   
 }
@@ -83,7 +96,15 @@ function resetCells(){
 
 
 function reset(){
+
+  for (let i = 0; i < rows; i++) {
+    grid[i] = new Array(cols)
+    for (let j = 0; j < cols; j++) {
+      grid[i][j] = new Cell(1, i, j);
+    }
+  }
   
+  ant = new Ant(grid, rows, cols);
   resetCells();
   ant.resetAnt();
 }

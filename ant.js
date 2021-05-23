@@ -1,7 +1,7 @@
 class Ant {
   constructor(grid, rows, cols) {
-    this.row = rows / 2;
-    this.col = cols / 2;
+    this.row = int(rows / 2);
+    this.col = int(cols / 2);
     this.direction = "north";
   }
 
@@ -72,8 +72,8 @@ class Ant {
   
   
   resetAnt(){
-    this.col = cols/2;
-    this.row = rows/2;
+    this.col = int(cols/2);
+    this.row = int(rows/2);
     this.direction = "north";
   }
 
