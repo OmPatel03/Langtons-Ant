@@ -19,6 +19,6 @@ ___The [wikipedia](https://en.wikipedia.org/wiki/Langton%27s_ant) contains furth
 
 
 
-**[Link to the simulation](https://ompatel03.github.io/Langtons-Ant/) (Simulation will reset when ant reaches an edge.**
+**[Link to the simulation](https://ompatel03.github.io/Langtons-Ant/) (Simulation will reset when ant reaches an edge.)**
 
 ![Cropped Langtons Ant](https://user-images.githubusercontent.com/74339618/119249077-f286a980-bb63-11eb-90b7-fef44b112b3d.gif)
