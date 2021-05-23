@@ -5,6 +5,7 @@ let grid = new Array(rows);
 let ant;
 let frames = 15;
 let slider;
+let button;
 
 function setup() {
   createCanvas(600, 600);
@@ -19,7 +20,8 @@ function setup() {
   ant = new Ant(grid, rows, cols);
   
   slider = createSlider(1, 50, 10);
-  
+  button = createButton("Reset Ant");
+  button.mousePressed(reset);
 }
 
 function draw() {
@@ -31,8 +33,7 @@ function draw() {
   ant.move();
   
   if (ant.checkEdges() == true){
-    resetCells();
-    ant.resetAnt();
+    reset();
   }
   ant.show();
   
@@ -78,5 +79,12 @@ function resetCells(){
     }
   }
   
+}
+
+
+function reset(){
+  
+  resetCells();
+  ant.resetAnt();
 }
 
