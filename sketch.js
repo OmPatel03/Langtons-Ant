@@ -20,11 +20,13 @@ function setup() {
   }
   
   ant = new Ant(grid, rows, cols);
+
   
   slider = createSlider(1, 50, 10);
   button = createButton("Reset Ant");
   button.mousePressed(reset);
-  input = createInput("30");
+  input = createInput("Enter Dims");
+
 }
 
 function draw() {
@@ -34,8 +36,7 @@ function draw() {
   
   drawGrid(grid, rows, cols);
   drawCells(grid);
-  ant.move();
-  console.log(typeof value);
+  ant.move(); 
   
   if (ant.checkEdges() == true){
     reset();
